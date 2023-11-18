@@ -14,12 +14,12 @@ echo -e $str
 a="entropy"
 # 双引号拼接
 greeting="hello, "$a" !"
-greet1="hello, "${a}" !"
-echo $greeting $greet
+greet1="hello, ${a} !"
+echo $greeting $greet1
 # 单引号拼接
 greet2='hello, '$a' !'
-greet3='hello, '${a}' !'
-echo $greet2 greet3
+greet3='hello, ${a} !'
+echo $greet2 $greet3
 
 # 获取字符串长度
 string="whoami"
@@ -34,4 +34,4 @@ echo ${string:1:4} # 索引从0开始
 # 查找字符子串
 # 查找i或o出现的位置，优先最早出现的字符，位置是索引值+1
 content="runoob is a great site"
-echo `expr index $content io`
+echo $(expr index "$content" io)

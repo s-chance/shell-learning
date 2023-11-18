@@ -22,7 +22,7 @@ echo "result: $result"
 # 字符串测试
 val1="runoob1"
 val2="runoob"
-if test $val1 = $ val2; then
+if test $val1 = $val2; then
 	echo "字符串相等"
 else
 	echo "字符串不相等"
